@@ -1,7 +1,7 @@
+#pragma comment(lib, "winmm.lib")	//PlaySound() 호출을 위한 winmm.lib 라이브러리를 로드한다.
 #include <stdio.h>
 #include <Windows.h>
 #include "function.h"
-#pragma comment(lib, "winmm.lib")	//PlaySound() 호출을 위한 winmm.lib 라이브러리를 로드한다.
 
 /* 가사를 저장할 배열이다.
    notepad++로 가사파일을 열어보면 줄번호가 보이는데,
@@ -15,7 +15,7 @@ int main(void)
 	system("mode con cols=100 lines=40");	//콘솔 창 크기
 	timeBeginPeriod(1);		//주기를 1ms로 설정
 	Sleep(500);		//창이 설정된 것이 확실히 보일 때까지 대기
-	
+
 	//가사파일 불러오기
 	int eof = readFile_lyrics(".\\res\\lyrics.txt", lyrics, 100);
 	if (eof == -1)
