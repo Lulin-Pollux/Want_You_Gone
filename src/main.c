@@ -1,4 +1,4 @@
-#pragma comment(lib, "winmm.lib")	//PlaySound() 호출을 위한 winmm.lib 라이브러리를 로드한다.
+#pragma comment(lib, "winmm.lib")
 #include <stdio.h>
 #include <Windows.h>
 #include "function.h"
@@ -11,7 +11,7 @@ char lyrics[100][50];
 
 int main(void)
 {
-	SetConsoleTitle(TEXT("Want You Gone")); //CMD 제목
+	SetConsoleTitle("Want You Gone"); //CMD 제목
 	system("mode con cols=100 lines=40");	//콘솔 창 크기
 	timeBeginPeriod(1);		//주기를 1ms로 설정
 	Sleep(500);		//창이 설정된 것이 확실히 보일 때까지 대기
