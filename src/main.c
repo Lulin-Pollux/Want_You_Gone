@@ -17,7 +17,7 @@ int main(void)
 	Sleep(500);		//창이 설정된 것이 확실히 보일 때까지 대기
 
 	//가사파일 불러오기
-	int eof = readFile_lyrics(".\\res\\lyrics.txt", lyrics, 100);
+	int eof = readFile_lyrics("./res/lyrics.txt", lyrics, 100);
 	if (eof == -1)
 	{
 		printf("파일 열기 실패! \n");
